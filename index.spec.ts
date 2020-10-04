@@ -28,6 +28,7 @@ describe("Firast", () => {
   test("cleanup simple sentences #2", () => {
     expect(
       firast(
+        // eslint-disable-next-line quotes
         '2. نویسه های انگليسي رايج در تايپ فارسي را به معادل صحيح فارسي آن تبدیل می کند, مثلا تبدیل کامای انگلیسی به ویرگول (,), يا نقطه ویرگول به جای semicolon (;) و یا استفاده از "گيومه های فارسي"',
       ),
     ).toBe(
