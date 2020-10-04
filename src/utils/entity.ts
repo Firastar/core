@@ -1,3 +1,4 @@
+/* eslint-disable */
 const entities = {
   "sbquo;": "\u201a",
   "lsquo;": "\u2018",
@@ -18,7 +19,7 @@ const entities = {
   "zwnj;": "\u200c",
   "shy;": "\u00ad", // wrongly used as zwnj
 };
-
+/* eslint-enable */
 export function decodeHTMLEntities(text: string): string {
   return text.replace(/&(#?[^;\W]+;?)/g, function(matched, match) {
     let n;

@@ -54,10 +54,7 @@ import {
   restoreUri,
 } from "./src/utils/preservers";
 
-export function firast(
-  text: string,
-  options?: Partial<IOptions>,
-): string {
+export function firast(text: string, options?: Partial<IOptions>): string {
   // Complete options obj
   options = { ...defaultOptions, ...options };
 
