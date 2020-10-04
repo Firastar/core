@@ -1,5 +1,5 @@
 {
-    "name": "firastar-js",
+    "name": "@firastar/firastar-js",
     "version": "0.1.0",
     "description": "Write your best with Firastar in JS",
     "main": "dist/index.js",
