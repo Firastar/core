@@ -6,7 +6,9 @@ export function charLevelReplace(
   const fromChars = from.split("");
   const toChars = to.split("");
   for (const i in fromChars) {
-    text = text.replace(new RegExp(fromChars[i], "g"), toChars[i]);
+    if (Object.prototype.hasOwnProperty.call(fromChars, i)) {
+      text = text.replace(new RegExp(fromChars[i], "g"), toChars[i]);
+    }
   }
   return text;
 }
