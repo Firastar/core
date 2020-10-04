@@ -1,0 +1,17 @@
+{
+    "transform": {
+        "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+        "!**/*.d.ts",
+        "!**/node_modules/**",
+        "src/**/*.ts"
+    ],
+    "verbose": true,
+    "moduleFileExtensions": [
+        "ts",
+        "js"
+    ]
+}
