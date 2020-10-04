@@ -3,7 +3,7 @@
 		<img src="./images/banner.png" />
 	</p>
 	<h1 align="center">Firastar</h1>
-	<p align="center">Write your best in JS.</p>
+	<p align="center">Write your best for JS.</p>
 
 
 ![CI/CD](https://github.com/Firastar/firastar-js/workflows/Continuous%20Integration/badge.svg)
