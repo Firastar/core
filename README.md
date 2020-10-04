@@ -14,3 +14,22 @@
 
 </div>
 <hr />
+
+## Todo
+
+- [ ] Write a document
+- [ ] Increase the test coverage
+- [ ] Write more tests
+- [ ] Implement isPersian text detector func
+
+## Contributing
+
+Thank you for your interest in contributing! Please feel free to put up a PR for any issue or feature request.
+
+## Give me a Star
+
+If you think this project is helpful just give me a ⭐️ Star is enough because i don't drink coffee 😃
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Firastar/firastar-js/blob/master/LICENSE) file for details.
