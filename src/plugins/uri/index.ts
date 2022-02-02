@@ -1,4 +1,4 @@
-import { preservation } from "./preservation";
+import { preservation } from "../../utils/preservation";
 
 // @Ref https://github.com/jhermsmeier/uri.regex
 const patternURI =

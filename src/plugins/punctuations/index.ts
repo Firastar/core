@@ -1,4 +1,4 @@
-import { charLevelReplace } from "./charLevelReplace";
+import { charLevelReplace } from "../../utils/charLevelReplace";
 
 export function fixPunctuations(text: string): string {
   return charLevelReplace(text, ",;", "،؛");

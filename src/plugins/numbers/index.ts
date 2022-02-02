@@ -1,5 +1,5 @@
-import { arabicDigits, englishDigits, persianDigits } from "../const";
-import { charLevelReplace } from "./charLevelReplace";
+import { arabicDigits, englishDigits, persianDigits } from "../../constants";
+import { charLevelReplace } from "../../utils/charLevelReplace";
 
 export function fixArabicNumbers(text: string): string {
   return (

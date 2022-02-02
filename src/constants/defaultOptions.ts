@@ -17,6 +17,7 @@ export const defaultOptions: IOptions = {
   removeRLM: true,
   fixZWNJ: true,
   fixArabicNumbers: true,
+  skipMarkdownOrderedListsNumbersConversion: true,
   fixEnglishNumbers: true,
   fixNumeralSymbols: true,
   fixPunctuations: true,

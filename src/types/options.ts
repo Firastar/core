@@ -15,6 +15,7 @@ export interface IOptions {
   removeRLM: boolean;
   fixZWNJ: boolean;
   fixArabicNumbers: boolean;
+  skipMarkdownOrderedListsNumbersConversion: boolean;
   fixEnglishNumbers: boolean;
   fixNumeralSymbols: boolean;
   fixPunctuations: boolean;

@@ -1,4 +1,4 @@
-import { preservation } from "./preservation";
+import { preservation } from "../../utils/preservation";
 
 export const html: string[] = [];
 

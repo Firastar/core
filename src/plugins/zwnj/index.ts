@@ -1,4 +1,4 @@
-import { persianChars, persianDiacritic } from "../const";
+import { persianChars, persianDiacritic } from "../../constants";
 
 // @Ref https://github.com/ebraminio/persiantools
 export function fixZWNJ(text: string): string {

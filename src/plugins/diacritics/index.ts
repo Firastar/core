@@ -1,4 +1,4 @@
-import { persianDiacritic } from "../../const";
+import { persianDiacritic } from "../../constants";
 
 export function fixDiacritics(text: string): string {
   return (

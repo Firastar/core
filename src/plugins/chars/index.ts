@@ -1,4 +1,4 @@
-import { charLevelReplace } from "./charLevelReplace";
+import { charLevelReplace } from "../../utils/charLevelReplace";
 
 export function fixNonPersianChars(text: string): string {
   return charLevelReplace(text, "كڪيىۍېہە", "ککییییههه");
