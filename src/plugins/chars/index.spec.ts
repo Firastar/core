@@ -1,5 +1,4 @@
 import { fixNonPersianChars } from ".";
-import { charLevelReplace } from "../../utils/charLevelReplace";
 
 describe("Chars", () => {
   test("fixNonPersianChars", () => {
