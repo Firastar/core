@@ -1,4 +1,4 @@
-import { fixArabicHamzeh, fixNonPersianChars, removeArabicHamzeh } from ".";
+import { fixArabicHamzeh, fixHamzeh, fixNonPersianChars, removeArabicHamzeh } from ".";
 
 describe("Chars", () => {
   test("fixNonPersianChars", () => {
@@ -18,5 +18,9 @@ describe("Chars", () => {
 
   test("removeArabicHamzeh", () => {
     expect(removeArabicHamzeh("صلاة مسلمین")).toBe("صلاه‌ی مسلمین");
+  });
+
+  test("fixHamzeh", () => {
+    expect(fixHamzeh("صلهه ی رحم")).toBe("صلههٔ رحم");
   });
 });
