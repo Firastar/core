@@ -1,0 +1,40 @@
+import { fixArabicHamzeh, fixHamzeh, fixNonPersianChars, fixSuffixSpacingHamzeh, removeArabicHamzeh } from ".";
+
+describe("Chars", () => {
+  test("fixNonPersianChars", () => {
+    expect(fixNonPersianChars("كمك های خیریه مردمی")).toBe("کمک های خیریه مردمی");
+    expect(fixNonPersianChars("ڪمڪ هاي خیریه مردمی")).toBe("کمک های خیریه مردمی");
+    expect(fixNonPersianChars("كمك هاى خيريه مردمی")).toBe("کمک های خیریه مردمی");
+    expect(fixNonPersianChars("كمك هاۍ خىرىه مردمى")).toBe("کمک های خیریه مردمی");
+    expect(fixNonPersianChars("كمڪ هاۍ خيرىه مردمۍ")).toBe("کمک های خیریه مردمی");
+    expect(fixNonPersianChars("كمڪ هاۍ خېرىه مردمې")).toBe("کمک های خیریه مردمی");
+    expect(fixNonPersianChars("كمڪ هاۍ خېرىہ مردمې")).toBe("کمک های خیریه مردمی");
+    expect(fixNonPersianChars("كمڪ هاۍ خېرىە مردمې")).toBe("کمک های خیریه مردمی");
+  });
+
+  test("fixArabicHamzeh", () => {
+    expect(fixArabicHamzeh("صلاة مسلمین")).toBe("صلاهٔ مسلمین");
+  });
+
+  test("removeArabicHamzeh", () => {
+    expect(removeArabicHamzeh("صلاة مسلمین")).toBe("صلاه‌ی مسلمین");
+  });
+
+  test("fixHamzeh", () => {
+    expect(fixHamzeh("صله ی رحم")).toBe("صلهٔ رحم");
+    expect(fixHamzeh("صله‎ی رحم")).toBe("صلهٔ رحم");
+    expect(fixHamzeh("صله ی رحم")).toBe("صلهٔ رحم");
+    expect(fixHamzeh("صلهی رحم")).toBe("صلهی رحم");
+    expect(fixHamzeh("صلهء رحم")).toBe("صلهٔ رحم");
+    expect(fixHamzeh("صله ء رحم")).toBe("صلهٔ رحم");
+    expect(fixHamzeh("صله ء رحم")).toBe("صلهٔ رحم");
+    expect(fixHamzeh("صله‎ء رحم")).toBe("صلهٔ رحم");
+    expect(fixHamzeh("صله رحم")).toBe("صله رحم");
+    expect(fixHamzeh("صلۀ رحم")).toBe("صلهٔ رحم");
+    expect(fixHamzeh("صلۀ ی رحم")).toBe("صلهٔ ی رحم");
+  });
+
+  test("fixSuffixSpacingHamzeh", () => {
+    expect(fixSuffixSpacingHamzeh("صلهه ی رحم")).toBe("صلههٔ رحم");
+  });
+});
